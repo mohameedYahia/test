@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
       - name: Rebuild JPEG
         run: |
-          cat social-post-assets/chunk1.txt social-post-assets/chunk2.txt social-post-assets/chunk3.txt social-post-assets/chunk4.txt | tr -d '\n\r ' | base64 --decode > social-post-assets/sunday-ai-workflow-fixed.jpg
+          cat social-post-assets/chunk1.txt social-post-assets/chunk2.txt social-post-assets/chunk3.txt social-post-assets/chunk4_1.txt social-post-assets/chunk4_2.txt social-post-assets/chunk4_3.txt social-post-assets/chunk4_4.txt social-post-assets/chunk4_5.txt | tr -d '\n\r ' | base64 --decode > social-post-assets/sunday-ai-workflow-fixed.jpg
           file social-post-assets/sunday-ai-workflow-fixed.jpg
       - name: Commit rebuilt image
         run: |
